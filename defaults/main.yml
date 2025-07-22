@@ -1,5 +1,6 @@
 # defaults file
 ---
+ufw_enabled: false
 ufw_default_incoming_policy: deny
 ufw_default_outgoing_policy: allow
 

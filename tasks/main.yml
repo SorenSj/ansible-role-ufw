@@ -36,6 +36,9 @@
 - name: start and enable service
   community.general.ufw:
     state: enabled
+  when:
+    - ufw_enabled | bool
+  register: ufw_service_status
   tags:
     - configuration
     - ufw
